@@ -1,0 +1,15 @@
+    <footer class='footer'>
+      <a href="https://www.linkedin.com/in/james-hopkins-003830151/">
+        <img src="../public/img/linkedin.svg" class="logo-small linkedin-filter" />
+      </a>
+      <a href="https://github.com/James-Hopkins">
+        <img src="../public/img/github.svg" class="logo-small github-filter" />
+      </a>
+      Copyright &copy; 2021
+    </footer>
+
+    {{if .DevMode}}
+      {{template "debug.html" .}}
+    {{end}}
+  </body>
+</html>

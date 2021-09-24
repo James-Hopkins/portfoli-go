@@ -1,0 +1,13 @@
+#home {
+  background: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* adds a semi transparent layer */
+  box-shadow: inset 0 0 0 1000px var(--main-dark-transparent);
+}
+
+.logo {
+  width: 99px;
+  height: 99px;
+}

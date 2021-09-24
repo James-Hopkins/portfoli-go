@@ -1,0 +1,10 @@
+.footer {
+  width: 100%;
+  background-color: var(--main-alt);
+  color: var(--main);
+  text-align: center;
+}
+.logo-small {
+  width: 25px;
+  height: 25px;
+}

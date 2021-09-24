@@ -1,0 +1,70 @@
+#about {
+  min-height: 90vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  display: grid;
+  grid-template-areas:
+    "about-headings"
+    "about-info";
+  gap: 1rem;
+}
+.about-info {
+  display: grid;
+  grid-template-areas:
+    "bio bio bio"
+    "job-1 job-2 job-3";
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+@media all and (max-width: 800px) {
+  .about-info {
+    display: grid;
+    grid-template-areas:
+      "bio"
+      "job-1"
+      "job-2"
+      "job-3";
+  }
+}
+
+@media (max-width: 450px) {
+  .about-info {
+    display: grid;
+    grid-template-areas:
+      "bio"
+      "job-1"
+      "job-2"
+      "job-3";
+  }
+}
+
+.about-headings {
+  grid-area: about-headings;
+}
+.bio {
+  grid-area: bio;
+  font-size: 1.25rem;
+}
+
+.job-1 {
+  grid-area: job-1;
+}
+
+.job-2 {
+  grid-area: job-2;
+}
+
+.job-3 {
+  grid-area: job-3;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-color: var(--main-excentric);
+}
+
+h6 {
+  text-decoration-line: underline;
+  text-decoration-color: var(--main-excentric);
+}

@@ -1,0 +1,71 @@
+.menu-grid {
+  display: grid;
+  grid-template-areas: "home about contact blog";
+}
+
+@media all and (max-width: 800px) {
+  .menu-grid {
+    display: grid;
+    grid-template-areas:
+      "home about"
+      "contact blog";
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-grid {
+    display: grid;
+    grid-template-areas:
+      "home"
+      "about"
+      "contact"
+      "blog";
+  }
+}
+
+.menu-link {
+  display: block;
+  padding: 1.5rem 0rem;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100%;
+  background: var(--main-alt);
+  transition: background 200ms ease;
+  text-decoration: none;
+}
+
+.menu-href {
+  display: block;
+}
+.menu-link:hover {
+  background: var(--main-excentric);
+}
+
+.home-link {
+  grid-area: home;
+}
+
+.about-link {
+  grid-area: about;
+}
+
+.contact-link {
+  grid-area: contact;
+}
+
+.blog-link {
+  grid-area: blog;
+}
+
+/*  https://codepen.io/sosuke/pen/Pjoqqp */
+.github-filter {
+  filter: invert(100%) sepia(59%) saturate(1151%) hue-rotate(177deg)
+    brightness(103%) contrast(98%);
+}
+
+.linkedin-filter {
+  filter: invert(23%) sepia(64%) saturate(3713%) hue-rotate(198deg)
+    brightness(88%) contrast(92%);
+}
