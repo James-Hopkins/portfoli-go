@@ -1,0 +1,47 @@
+.social-grid {
+  display: grid;
+  grid-template-areas: "social-icon social-text";
+  grid-template-columns: 1fr 4fr;
+  gap: 0;
+  padding: 1rem;
+  height: 75px;
+}
+
+.linkedin-icon {
+  grid-area: social-icon;
+  height: auto;
+  width: auto;
+  background: url("../img/linkedin.svg") no-repeat;
+  background-size: contain;
+}
+
+.social-text {
+  grid-area: social-text;
+  font-size: 3rem;
+}
+
+.github-icon {
+  grid-area: social-icon;
+  height: 100%;
+  width: auto;
+  background: url("../img/github.svg") no-repeat;
+  background-size: contain;
+}
+
+.email-icon {
+  grid-area: social-icon;
+  height: auto;
+  width: auto;
+  background: url("../img/envelope.svg") no-repeat;
+  background-size: contain;
+  filter: invert(21%) sepia(1%) saturate(5883%) hue-rotate(202deg)
+    brightness(103%) contrast(91%);
+}
+
+@media all and (max-width: 450px) {
+  .social-text {
+    grid-area: social-text;
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+}
